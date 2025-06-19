@@ -9,6 +9,7 @@ def get_file_content(working_directory, file_path):
     if not os.path.isfile(ac_file_path):
         return f'Error: File not found or is not a regular file: "{file_path}"'
     
+    
     try:
         max_chars = 10000
         with open(ac_file_path, "r") as fi:
